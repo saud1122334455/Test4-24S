@@ -28,26 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            listBox1 = new ListBox();
             textBox1 = new TextBox();
             button1 = new Button();
+            button2 = new Button();
+            textBox2 = new TextBox();
+            textBox3 = new TextBox();
+            textBox4 = new TextBox();
+            textBox5 = new TextBox();
             SuspendLayout();
-            // 
-            // listBox1
-            // 
-            listBox1.Font = new Font("Segoe UI", 14F);
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 25;
-            listBox1.Items.AddRange(new object[] { "Ahmed", "Sami", "Majid", "Ayman", "Asad" });
-            listBox1.Location = new Point(17, 17);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(136, 154);
-            listBox1.TabIndex = 0;
             // 
             // textBox1
             // 
             textBox1.Font = new Font("Segoe UI", 14F);
-            textBox1.Location = new Point(175, 46);
+            textBox1.Location = new Point(13, 14);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(132, 32);
             textBox1.TabIndex = 1;
@@ -55,21 +48,67 @@
             // button1
             // 
             button1.Font = new Font("Segoe UI", 14F);
-            button1.Location = new Point(197, 97);
+            button1.Location = new Point(29, 63);
             button1.Name = "button1";
             button1.Size = new Size(100, 42);
             button1.TabIndex = 2;
-            button1.Text = "Save";
+            button1.Text = "Add";
             button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            button2.Font = new Font("Segoe UI", 14F);
+            button2.Location = new Point(29, 126);
+            button2.Name = "button2";
+            button2.Size = new Size(100, 42);
+            button2.TabIndex = 2;
+            button2.Text = "Remove";
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // textBox2
+            // 
+            textBox2.Font = new Font("Segoe UI", 14F);
+            textBox2.Location = new Point(185, 22);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(132, 32);
+            textBox2.TabIndex = 1;
+            // 
+            // textBox3
+            // 
+            textBox3.Font = new Font("Segoe UI", 14F);
+            textBox3.Location = new Point(185, 60);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(132, 32);
+            textBox3.TabIndex = 1;
+            // 
+            // textBox4
+            // 
+            textBox4.Font = new Font("Segoe UI", 14F);
+            textBox4.Location = new Point(185, 98);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(132, 32);
+            textBox4.TabIndex = 1;
+            // 
+            // textBox5
+            // 
+            textBox5.Font = new Font("Segoe UI", 14F);
+            textBox5.Location = new Point(185, 136);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(132, 32);
+            textBox5.TabIndex = 1;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(329, 191);
+            Controls.Add(button2);
             Controls.Add(button1);
+            Controls.Add(textBox5);
+            Controls.Add(textBox4);
+            Controls.Add(textBox3);
+            Controls.Add(textBox2);
             Controls.Add(textBox1);
-            Controls.Add(listBox1);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -77,9 +116,12 @@
         }
 
         #endregion
-
-        private ListBox listBox1;
         private TextBox textBox1;
         private Button button1;
+        private Button button2;
+        private TextBox textBox2;
+        private TextBox textBox3;
+        private TextBox textBox4;
+        private TextBox textBox5;
     }
 }
